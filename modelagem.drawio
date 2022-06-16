@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="2">
     <diagram id="AfMdnE-g4ZWjtciFe64G" name="Conceitual - Peaple">
-        <mxGraphModel dx="1811" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="1">
+        <mxGraphModel dx="2519" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="1">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -87,7 +87,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="pSEHbn4MYelLucld0nCO" name="Parent">
-        <mxGraphModel dx="2748" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="3004" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="Catww3blxHvyXf62gdcK-0"/>
                 <mxCell id="Catww3blxHvyXf62gdcK-1" parent="Catww3blxHvyXf62gdcK-0"/>

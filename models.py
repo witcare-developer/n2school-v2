@@ -18,7 +18,7 @@ class ParentStudent(Base):
     date_birth = Column(DateTime)
     address_id = Column(Integer, ForeignKey("address.id"))
 
-    student_item = relationship("Responsible", back_populates="parent")
+    student_item = relationship("Student", secondary="responsible", back_populates = "parent_student")
 
 class Student(Base):
     __tablename__ = "student"
@@ -30,8 +30,15 @@ class Student(Base):
     gender = Column(String)
     date_birth = Column(DateTime)
 
-    parent_item = relationship("Responsible", back_populates="student")
+    parent_item = relationship("ParentStudent", secondary="responsible", back_populates = "student")
 
+class Responsible(Base):
+    __tablename__ = "responsible"
+    parent_cpf = Column(Integer, ForeignKey("parent_student.cpf"), primary_key = True)
+    student_cpf = Column(Integer, ForeignKey("student.cpf"), primary_key = True )
+
+    # parent = relationship("ParentStudent", back_populates="student")
+    # student = relationship("Student", back_populates="parent")
 
 class Address(Base):
     __tablename__ = "address"
@@ -45,11 +52,3 @@ class Address(Base):
     neighborhood = Column(String)
     city = Column(String)
     country = Column(String)
-
-class Responsible(Base):
-    __tablename__ = "responsible"
-    parent_cpf = Column(Integer, ForeignKey("parent_student.cpf"))
-    student_cpf = Column(Integer, ForeignKey("student.cpf") )
-
-    parent = relationship("ParentStudent", back_populates="student_item")
-    student = relationship("Student", back_populates="parent_item")
